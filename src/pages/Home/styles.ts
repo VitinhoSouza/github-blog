@@ -67,7 +67,9 @@ export const TitleContainer = styled.div`
         border-bottom: 2px solid transparent;
         transition: border-color 0.5s;
 
-        span{
+        a{
+            text-decoration: none;
+            color: ${(props)=>props.theme.blue};
             font-size: 0.75rem;
         }
 

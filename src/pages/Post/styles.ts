@@ -55,6 +55,12 @@ export const ActionsContainer = styled.div`
         cursor: pointer;
         border-bottom: 2px solid ${(props)=>props.theme.blue}; 
     }
+    
+    a{
+      text-decoration: none;
+      font-size: 0.75rem;
+      color: ${(props)=>props.theme.blue};
+    }
       
 }
 `
@@ -79,6 +85,15 @@ export const SocialNetwork = styled.div`
 `
 
 export const PostContent = styled.div`
-  margin-top: 2rem;
-  width: 50rem;
+  margin: 2rem 0;
+  max-width: 50rem;
+
+  text-align: justify;
+  p:first-child {
+    font-size: 1.2rem;
+  }
+  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `
